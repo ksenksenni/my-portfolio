@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML-верстальщик</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <div class="container"> -->
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Обо мне</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Навыки и скилы</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Примеры работ</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+
+        <button class="header__menu-btn btn">Скачать резюме</button>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <img src="img/avatar.jpg" alt="мое фото">
+            <h1>Ксения Николаева</h1>
+            <h2>HTML-верстальщик</h2>
+            <p>куча текста обо мне, целый абзац: кто я что я, что бывщий маркетолог, поэтому и понимаю в юикс или типа того, что умею верстку и джс и немного про хобби (сапы, история, кино, книги)
+            </p>
+        </section>
+
+        <section>
+            <!-- иконки технологий и красткое описание, что что я могу и для чего, типа препроцессор для чистого кода и чтобы не запутаться в простыне кода -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <img src="img/html_black.jpg" alt="html5">
+                            <p></p>
+                        </div>
+
+                        <div>
+                            <img src="img/bem_black.png" alt="bem">
+                            <p></p>
+                        </div>
+
+                        <div>
+                            <img src="img/bootstrap_black.png" alt="bootstrap">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <img src="img/css_black.png" alt="css3">
+                            <p></p>
+                        </div>
+
+                        <div>
+                            <img src="img/scss_black.png" alt="sass/ scss">
+                            <p></p>
+                        </div>
+
+                        <div>
+                            <img src="img/figma_black.png" alt="figma">
+                            <img src="img/scetch_black.png" alt="scetch">
+                            <img src="img/ps_black.jpg" alt="photoshop">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <img src="img/js_blacl2.png" alt="js">
+                            <p></p>
+                        </div>
+                        <div>
+                            <img src="img/gulp_black.png" alt="gulp">
+                            <p></p>
+                        </div>
+
+                        <div>
+                            <img src="img/git_black.png" alt="git">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <a href="#"><img src="" alt=""></a>
+                            <p>адаптитвный сайт на флексах</p>
+                        </div>
+
+                        <div>
+                            <a href="#"><img src="" alt=""></a>
+                            <p>скрипты на форму</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <a href="#"><img src="" alt=""></a>
+                            <p>адаптитвный сайт на гридах</p>
+                        </div>
+
+                        <div>
+                            <a href="#"><img src="" alt=""></a>
+                            <p>калькулятор на скриптах</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <a href="#"><img src="" alt=""></a>
+                            <p>адаптитвный сайт на флексах</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <a href="mailto:nikolaevaksa@gmail.com">nikolaevaksa@gmail.com</a>
+            <a href="tel:+79046134465">+7 (904) 613 44 65</a>
+
+            <a href="">Telegram</a>
+            <a href="">Whatsapp</a>
+
+            <form action="#" method="post">
+                <p>Или отправте мне сообщение, заполнив форму:</p>
+
+                <div>
+                    <input type="text" name="email" id="email" textarea>
+                    <label for="email">Ваш e-mail</label>
+                </div>
+
+                <div>
+                    <textarea id="textarea" rows="5" textarea></textarea>
+                    <label for="textarea">Оставьте свое сообщение</label>
+                </div>
+
+                <input class="form__btn" type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <button>Скачать резюме</button>
+
+        <a href="">Github</a>
+    </footer>
+    <!-- </div> -->
+
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
+
+    <!-- Вариант 2: Bootstrap JS отдельно от Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

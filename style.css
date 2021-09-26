@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'YandexSansText';
+    src: url('fonts/YandexSansText-Regular.eot');
+    src: url('fonts/YandexSansText-Regular.eot') format('embedded-opentype'), url('fonts/YandexSansText-Regular.woff2') format('woff2'), url('fonts/YandexSansText-Regular.woff') format('woff'), url('fonts/YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'YandexSansText', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #8a8a8a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #c7f6fc;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+}
+
+.header__menu-item {
+    margin-right: 20px;
+}
+
+.header__menu-link {
+    color: #8a8a8a;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__menu-link:hover {
+    color: #8a8a8a;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #8a8a8a;
+    border: 1px solid #8a8a8a;
+    text-transform: uppercase;
+    color: #c7f6fc;
+}
+
+.btn:hover {
+    color: #8a8a8a;
+    background-color: #c7f6fc;
+}
