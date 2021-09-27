@@ -10,8 +10,8 @@
 </head>
 
 <body>
+
     <header class="header">
-        <!-- <div class="container"> -->
         <nav>
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="#" class="header__menu-link">Обо мне</a></li>
@@ -27,131 +27,171 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <img src="img/avatar.jpg" alt="мое фото">
-            <h1>Ксения Николаева</h1>
-            <h2>HTML-верстальщик</h2>
-            <p>куча текста обо мне, целый абзац: кто я что я, что бывщий маркетолог, поэтому и понимаю в юикс или типа того, что умею верстку и джс и немного про хобби (сапы, история, кино, книги)
-            </p>
+    <main class="container">
+        <section class="about">
+            <img src="img/avatar.jpg" alt="мое фото" class="about__image">
+
+            <div class="about__text">
+                <h1 class="about__text-name">Ксения Николаева</h1>
+                <h2 class="about__text-job">HTML-верстальщик</h2>
+                <p class="about__text-description">куча текста обо мне, целый абзац: кто я что я, что бывщий маркетолог, поэтому и понимаю в юикс или типа того, что умею верстку и джс и немного про хобби (сапы, история, кино, книги)
+                </p>
+            </div>
         </section>
 
-        <section>
-            <!-- иконки технологий и красткое описание, что что я могу и для чего, типа препроцессор для чистого кода и чтобы не запутаться в простыне кода -->
+        <section class="skills">
+            <h2 class="skills__title title">Технологии, которыми я пользуюсь</h2>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <img src="img/html_black.jpg" alt="html5">
-                            <p></p>
-                        </div>
-
-                        <div>
-                            <img src="img/bem_black.png" alt="bem">
-                            <p></p>
-                        </div>
-
-                        <div>
-                            <img src="img/bootstrap_black.png" alt="bootstrap">
-                            <p></p>
-                        </div>
+            <div class="row">
+                <div class="col">
+                    <div class="skills__item">
+                        <h3>html5</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
                     </div>
-                    <div class="col">
-                        <div>
-                            <img src="img/css_black.png" alt="css3">
-                            <p></p>
-                        </div>
 
-                        <div>
-                            <img src="img/scss_black.png" alt="sass/ scss">
-                            <p></p>
-                        </div>
-
-                        <div>
-                            <img src="img/figma_black.png" alt="figma">
-                            <img src="img/scetch_black.png" alt="scetch">
-                            <img src="img/ps_black.jpg" alt="photoshop">
-                            <p></p>
-                        </div>
+                    <div class="skills__item">
+                        <h3>bem</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
                     </div>
-                    <div class="col">
-                        <div>
-                            <img src="img/js_blacl2.png" alt="js">
-                            <p></p>
-                        </div>
-                        <div>
-                            <img src="img/gulp_black.png" alt="gulp">
-                            <p></p>
-                        </div>
 
-                        <div>
-                            <img src="img/git_black.png" alt="git">
-                            <p></p>
-                        </div>
+                    <div class="skills__item">
+                        <h3>bootstrap</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="skills__item">
+                        <h3>css3</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>sass/ scss</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>figma/ scetch/ photoshop</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="skills__item">
+                        <h3>js</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>gulp</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>git</h3>
+                        <p>пробный текст для прримра всего пару строчек для чего нужен данный инструмент и как я его использую</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="projects">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                            <p>адаптитвный сайт на флексах</p>
-                        </div>
+            <div class="projects__item">
+                <a href="#"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
 
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                            <p>скрипты на форму</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                            <p>адаптитвный сайт на гридах</p>
-                        </div>
-
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                            <p>калькулятор на скриптах</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                            <p>адаптитвный сайт на флексах</p>
-                        </div>
-                    </div>
+                <div class="projects__item-text">
+                    <h2>сайт для детской библиотеки</h2>
+                    <p>адаптитвный сайт на флексах могостраничный с препроцессорами, сборщиком, слайдером и тд натянутый на вордпресс</p>
                 </div>
             </div>
+
+            <div class="projects__item">
+                <a href="#"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+                <div class="projects__item-text">
+                    <h2>калькулятор на js</h2>
+                    <p>калькулятор написан на чистом js, сверстан дизайн и тд</p>
+                </div>
+
+            </div>
+
+            <div class="projects__item">
+                <a href="#"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+                <div class="projects__item-text">
+                    <h2>адаптивный блок с формой</h2>
+                    <p>форма написанная на js, которая отправляет данные на сервер, не дает отправить форму с коротким паролем и учитывает другие данные, введенные пользователем</p>
+                </div>
+            </div>
+
+            <div class="projects__item">
+                <a href="#"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+                <div class="projects__item-text">
+                    <h2>лендинг для производства экокожи</h2>
+                    <p>адаптитвный сайт на гридах и тд</p>
+                </div>
+            </div>
+
+            <div class="projects__item">
+                <a href="#"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+                <div class="projects__item-text">
+                    <h2>сайт на флексах/гридах/ с использованием сетки бутстпрапа</h2>
+                    <p>адаптитвный сайт на флексах могостраничный с препроцессорами, сборщиком, слайдером и тд</p>
+                </div>
+            </div>
+
         </section>
 
-        <section>
-            <a href="mailto:nikolaevaksa@gmail.com">nikolaevaksa@gmail.com</a>
-            <a href="tel:+79046134465">+7 (904) 613 44 65</a>
+        <section class="contacts">
+            <h2 class="contacts__title title">Как со мной связаться:</h2>
 
-            <a href="">Telegram</a>
-            <a href="">Whatsapp</a>
+            <div class="contacts__content">
+                <div class="contacts__content-links">
+                    <div class="contacts__content-link contacts__content-link-tel">
+                        <a href="tel:+79046134465" class="contacts__content-link-description">+7 (904) 613 44 65</a>
+                    </div>
 
-            <form action="#" method="post">
-                <p>Или отправте мне сообщение, заполнив форму:</p>
+                    <div class="contacts__content-link contacts__content-link-email">
+                        <a href="mailto:nikolaevaksa@gmail.com" class="contacts__content-link-description">nikolaevaksa@gmail.com</a>
+                    </div>
 
-                <div>
-                    <input type="text" name="email" id="email" textarea>
-                    <label for="email">Ваш e-mail</label>
+                    <div class="contacts__content-link-social">
+                        <a href="" class="contacts__content-link-social-tg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="40" height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 50 50" xml:space="preserve">
+                                <g>
+                                    <circle xmlns="http://www.w3.org/2000/svg" cx="12" cy="12" fill="#8a8a8a" r="12" data-original="#039be5" style="" class="svg-btn"/>
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#ffffff" data-original="#ffffff"/>
+                                </g>
+                            </svg>
+                        </a>
+
+                        <a href="" class="contacts__content-link-social-wp">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="40" height="40" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 50 50" xml:space="preserve"
+                                class=""><g>
+                                <path xmlns="http://www.w3.org/2000/svg" style="" d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#8a8a8a" data-original="#4caf50"  class="svg-btn"/>
+                                <path xmlns="http://www.w3.org/2000/svg" style="" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264  C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304  c6.176-6.304,16.384-9.184,26.176-9.184c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64  c6.176,14.88,21.216,51.616,23.008,55.392c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744  c-3.776,4.352-7.36,7.68-11.136,12.352c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616  c28.576,25.44,51.744,33.568,60.032,37.024c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496  c5.12-7.232,11.584-8.128,18.368-5.568c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736  C411.2,329.152,411.2,344.032,405.024,361.504z" fill="#fafafa" data-original="#fafafa"/>
+                                </g>
+                                </svg>
+                        </a>
+                    </div>
                 </div>
 
-                <div>
-                    <textarea id="textarea" rows="5" textarea></textarea>
-                    <label for="textarea">Оставьте свое сообщение</label>
-                </div>
+                <form action="#" method="post" class="contacts__content-form">
+                    <p>Или отправте мне сообщение, заполнив форму:</p>
 
-                <input class="form__btn" type="submit" value="Отправить">
-            </form>
+                    <div>
+                        <input type="text" name="email" id="email" textarea>
+                        <label for="email">Ваш e-mail</label>
+                    </div>
+
+                    <div>
+                        <textarea id="textarea" rows="5" textarea></textarea>
+                        <label for="textarea">Оставьте свое сообщение</label>
+                    </div>
+
+                    <input class="form__btn" type="submit" value="Отправить">
+                </form>
+            </div>
         </section>
     </main>
 
