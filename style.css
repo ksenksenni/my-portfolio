@@ -70,8 +70,17 @@
         display: none;
     }
     
+    .shown {
+        display: block;
+    }
+    
     .mobile-menu__container {
         display: none;
+    }
+    
+    .btn-close {
+        margin-top: 40px;
+        margin-left: 20px;
     }
     
     @media(max-width: 768px) {
@@ -96,8 +105,8 @@
             display: block;
             position: relative;
             background: #8a8a8a;
-            ;
             height: 4px;
+            transition: transform 0.25s;
         }
         .mobile-menu__icon::after,
         .mobile-menu__icon::before {
@@ -118,7 +127,7 @@
             display: none;
             position: absolute;
             left: 0;
-            top: 100%;
+            top: 80px;
             right: 0;
             z-index: 999;
             transition: .5s;
