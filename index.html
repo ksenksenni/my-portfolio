@@ -12,17 +12,33 @@
 <body>
 
     <header class="header">
+        <div class="mobile-menu">
+            <button class="mobile-menu noshown"><div class="mobile-menu__icon"></div></button>
+
+
+            <nav class="mobile-menu__container">
+                <ul class="mobile-menu__list ">
+                    <li class="mobile-menu__item"><a href="#home" class="menu-item-link menu-link" data-to-anchor="home">Обо мне</a></li>
+                    <li class="mobile-menu__item"><a href="#about" class="menu-item-link menu-link" data-to-anchor="about">Навыки</a></li>
+                    <li class="mobile-menu__item"><a href="#services" class="menu-item-link menu-link" data-to-anchor="services">Проекты</a></li>
+                    <li class="mobile-menu__item"><a href="#team" class="menu-item-link menu-link" data-to-anchor="team">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <nav>
             <ul class="header__menu">
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Обо мне</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Навыки</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Проекты</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link menu-link">Обо мне</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link menu-link">Навыки</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link menu-link">Проекты</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link menu-link">Контакты</a></li>
             </ul>
         </nav>
 
-        <button type="button" class="button">Скачать резюме</button>
+        <button type="button" class="header__button button">Скачать резюме</button>
         </div>
+
+
     </header>
 
     <main>
