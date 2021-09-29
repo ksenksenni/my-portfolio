@@ -66,6 +66,22 @@
         color: #ffffff;
     }
     
+    .header__button {
+        padding-left: 30px;
+        position: relative;
+    }
+    
+    .header__button::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        background-image: url(img/download.png);
+        background-repeat: no-repeat;
+    }
+    
     .noshown {
         display: none;
     }
