@@ -23,12 +23,15 @@
         text-align: center;
     }
     
-    .btn {
+    .button {
         color: #8a8a8a;
         background-color: #c7f6fc;
+        border: 1px solid #8a8a8a;
+        border-radius: 3px;
+        padding: 5px 8px;
     }
     
-    .btn:hover {
+    .button:hover {
         color: #8a8a8a;
         background-color: #ffffff;
         border-color: #ffffff;
@@ -123,7 +126,7 @@
     /* projects */
     
     .projects {
-        margin-top: 150px;
+        margin-top: 50px;
     }
     
     .projects__item {
@@ -279,6 +282,23 @@
         background-color: #c7f6fc;
     }
     
+    @media screen and (max-width: 632px) {
+        .footer {
+            text-align: center;
+        }
+    }
+    
+    .footer__item {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 632px) {
+        .footer__item {
+            margin-top: 20px;
+        }
+    }
+    
     .footer__btn {
         text-align: center;
     }
@@ -287,8 +307,17 @@
         fill: #ffffff;
     }
     
+    .footer__link {
+        text-decoration: none;
+    }
+    
     .footer__copyright {
         font-size: 12px;
         text-align: right;
-        margin-top: 10px;
+    }
+    
+    @media screen and (max-width: 632px) {
+        .footer__copyright {
+            text-align: center;
+        }
     }
