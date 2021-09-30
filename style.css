@@ -40,7 +40,7 @@
     
     .header {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: baseline;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -171,7 +171,7 @@
         justify-content: center;
     }
     
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 700px) {
         .about {
             flex-direction: column;
             margin-top: 100px;
@@ -186,11 +186,11 @@
     }
     
     .about__text {
-        max-width: 600px;
-        margin-left: 50px;
+        max-width: 650px;
+        margin-left: 60px;
     }
     
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 700px) {
         .about__text {
             margin-left: 0;
             margin-top: 40px;
