@@ -222,6 +222,11 @@
     }
     /* projects */
     
+    .container-middle {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
     .projects {
         margin-top: 50px;
     }
