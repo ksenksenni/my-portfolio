@@ -275,6 +275,13 @@
     
     .contacts {
         padding-top: 50px;
+        text-align: center;
+        background-color: #c7f6fc;
+    }
+    
+    .container-small {
+        max-width: 350px;
+        margin: 0 auto;
     }
     
     .contacts__title {
@@ -282,36 +289,30 @@
     }
     
     .contacts__link {
-        padding-left: 50px;
-    }
-    
-    .contacts__link-tel,
-    .contacts__link-email {
         position: relative;
         margin-bottom: 15px;
+        margin-bottom: 30px;
+        padding-left: 30px;
     }
     
-    .contacts__link-tel::before,
-    .contacts__link-email::before {
+    @media screen and (max-width: 400px) {
+        .contacts__link {
+            padding-left: 0;
+        }
+        .contacts__link::before {
+            display: none;
+        }
+    }
+    
+    .contacts__link::before {
         content: "";
         position: absolute;
         top: 0;
-        left: 15px;
+        left: 65px;
         width: 24px;
         height: 24px;
-        background-repeat: no-repeat;
-    }
-    
-    .contacts__link-email {
-        margin-bottom: 30px;
-    }
-    
-    .contacts__link-tel::before {
-        background-image: url("img/telephone-call.png");
-    }
-    
-    .contacts__link-email::before {
         background-image: url("img/email.png");
+        background-repeat: no-repeat;
     }
     
     .contacts__link-description {
@@ -320,101 +321,40 @@
     }
     
     .contacts__link-description:hover {
-        color: #88ebf8;
-    }
-    
-    .svg-btn:hover {
-        fill: #88ebf8;
+        color: #ffffff;
     }
     
     .contacts__link-social {
         font-size: 0;
-    }
-    
-    .contacts__link-social-tg {
-        margin-right: 20px;
         margin-left: 15px;
     }
     
-    @media screen and (max-width: 632px) {
-        .contacts__form {
-            margin-top: 30px;
-        }
+    .contacts__link-social-wp {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
-    .contacts__form-text {
-        font-weight: bolder;
-    }
-    
-    .contacts__form-input {
-        font-size: 15px;
-    }
-    
-    .contacts__form-input:focus {
-        border-color: #88ebf8;
-        box-shadow: none;
-        color: #8a8a8a;
-    }
-    
-    .contacts__form-btn {
-        background-color: #ffffff;
-        border: 1px solid #8a8a8a;
-    }
-    
-    .contacts__form-btn:hover {
-        color: #ffffff;
-        background-color: #88ebf8;
-        border-color: #88ebf8;
-    }
-    
-    .contacts__form-:focus {
-        box-shadow: none;
-    }
-    /* footer */
-    
-    .footer {
-        margin-top: 30px;
-        padding-top: 15px;
-        padding-bottom: 7px;
-        background-color: #c7f6fc;
-    }
-    
-    @media screen and (max-width: 632px) {
-        .footer {
-            text-align: center;
-        }
-    }
-    
-    .footer__item {
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    @media screen and (max-width: 632px) {
-        .footer__item {
-            margin-top: 20px;
-        }
-    }
-    
-    .footer__btn {
-        text-align: center;
-    }
-    
-    .btn__git:hover {
+    .contacts__link-social-svg:hover .svg-btn {
         fill: #ffffff;
     }
     
-    .footer__link {
+    .contacts__link-resume {
+        margin-top: 40px;
+    }
+    
+    .contacts__link-resume-btn {
         text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: #c7f6fc;
     }
     
-    .footer__copyright {
+    .contacts__link-resume-btn:hover {
+        background-color: #ffffff;
+    }
+    
+    .contacts__copyright {
         font-size: 12px;
-        text-align: right;
-    }
-    
-    @media screen and (max-width: 632px) {
-        .footer__copyright {
-            text-align: center;
-        }
+        margin-top: 40px;
     }
