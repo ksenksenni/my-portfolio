@@ -1,145 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightSmile Veneers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>HTML-верстальщик</title>
 </head>
 
 <body>
+
     <header class="header">
-        <h1 class="header__title">BrightSmile Veneers</h1>
+        <button class="mobile-menu noshown"><div class="mobile-menu__icon"></div></button>
+
+        <nav class="mobile-menu__container">
+            <ul class="mobile-menu__list ">
+                <li class="mobile-menu__item"><a href="#about" class="menu-item-link menu-link" data-to-anchor="about">Обо мне</a></li>
+                <li class="mobile-menu__item"><a href="#skills" class="menu-item-link menu-link" data-to-anchor="skills">Навыки</a></li>
+                <li class="mobile-menu__item"><a href="#projects" class="menu-item-link menu-link" data-to-anchor="projects">Проекты</a></li>
+                <li class="mobile-menu__item"><a href="#contacts" class="menu-item-link menu-link" data-to-anchor="contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#about" class="header__menu-link menu-link" data-to-anchor="about">Обо мне</a></li>
+                <li class="header__menu-item"><a href="#skills" class="header__menu-link menu-link" data-to-anchor="skills">Навыки</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__menu-link menu-link" data-to-anchor="projects">Проекты</a></li>
+                <li class="header__menu-item"><a href="#contacts" class="header__menu-link menu-link" data-to-anchor="contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <a href="resume.pdf" download="" target="_blank">
+            <button type="button" class="header__button button">Скачать резюме</button>
+        </a>
+        </div>
+
+
     </header>
 
     <main>
-        <section class="container">
-            <div>
-                <div class="slider">
-                    <div class="item">
-                        <img src="img/slide-1.png" alt="Первый слайд">
-                    </div>
+        <section class="about container" data-from-anchor="about">
+            <img src="img/avatar.jpg" alt="мое фото" class="about__image">
 
-                    <div class="item">
-                        <img src="img/slide-2.jpg" alt="Второй слайд">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/slide-3.png" alt="Третий слайд">
-                    </div>
-
-                    <!-- <a class="prev" onclick="minusSlide()">&#10094;</a>
-                    <a class="next" onclick="plusSlide()">&#10095;</a> -->
-                    <a href="#"><img src="img/before.png" alt=""></a>
-                    <a href="#"><img src="img/after.png" alt=""></a>
-                </div>
-
-                <div class="slider-dots">
-                    <img src="img/slider-1.png" alt="">
-                    <img src="img/slider-2.png" alt="">
-                    <img src="img/slider-3.png" alt="">
-                    <!-- <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-                    <span class="slider-dots_item" onclick="currentSlide(2)"></span>
-                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> -->
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <div>
-                        <h2>BrightSmile Veneers</h2>
-                        <p>Вы будете улыбаться ярко!</p>
-                        <p>Удобные и практичные виниры по отличной цене! Оформите заказ прямо сейчас и оплатите товар при получении.</p>
-                    </div>
-
-                    <div>
-                        <p>2,7</p>
-                        <p>170 отзывов</p>
-                        <p>302 заказа(ов)</p>
-                    </div>
-
-                    <div>
-                        <p>Бесплатная доставка</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <div>
-                            <p>52 €</p>
-                            <p>5%</p>
-                        </div>
-
-                        <div>
-                            <p>49,00 €</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p>Скидка заканчивается через:</p>
-
-                        <div>
-                            <div id="countdown" class="countdown">
-                                <div class="countdown-number">
-                                    <span class="hours countdown-time"></span>
-                                    <span class="countdown-text">Часы</span>
-                                </div>
-                                <div class="countdown-number">
-                                    <span class="minutes countdown-time"></span>
-                                    <span class="countdown-text">Минуты</span>
-                                </div>
-                                <div class="countdown-number">
-                                    <span class="seconds countdown-time"></span>
-                                    <span class="countdown-text">Секунды</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <p>Количество:</p>
-
-                    <div>
-                        <button>-</button>
-                        <button>1</button>
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <button>купить сейчас</button>
+            <div class="about__text">
+                <h1>Ксения Николаева</h1>
+                <h2>HTML-верстальщик</h2>
+                <p class="about__text-description">Привет, меня зовут Ксюша, я&nbsp;живу в&nbsp;Санкт-Петербурге и&nbsp;занимаюсь HTML-версткой сайтов. Я&nbsp;создаю полностью адаптивные кросбраузерные сайты с&nbsp;валидной версткой. До&nbsp;всего этого, я&nbsp;занималась интернет-маркетингом,
+                    в&nbsp;том числе анализом пользовательского поведения, поэтому при работе над сайтом, я&nbsp;большое внимание уделяю UX.</p>
             </div>
         </section>
 
-        <section>
-            <h2>Инструкция по установке <b>BrightSmile</b></h2>
+        <section class="skills container" data-from-anchor="skills">
+            <h2 class="skills__title title">Технологии, которыми я&nbsp;пользуюсь</h2>
 
-            <div>
-                <div>
-                    <p>1</p>
-                    <p>Поместите виниры в емкость с теплой водой</p>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="skills__item">
+                        <h3>HTML5</h3>
+                        <p>Я&nbsp;использую семантическую верстку, чтобы разметка была логичной, простой и&nbsp;понятной, что позволяет экономить время и&nbsp;нервы.</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>BEM</h3>
+                        <p>Использую методологию BEM при именовании классов для упрощения работы с&nbsp;кодом, что позволяет, опять-таки, экономить время и&nbsp;нервы.</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>Bootstrap</h3>
+                        <p>Я&nbsp;использую популярный фреймворк, чтобы сэкономить время при работе над проектом и упростить его дальнейшее развитие.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p>2</p>
-                    <p>Через 10 минут достаньте их и обсушите салфеткой</p>
+                <div class="col-sm">
+                    <div class="skills__item">
+                        <h3>CSS3</h3>
+                        <p>Создаю красоту по&nbsp;макетам: различные сетки (flex, grid), резиновая адаптивная верстка, анимация, svg-изображения.</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>SASS/SCSS</h3>
+                        <p>С&nbsp;помощью препроцессоров ускоряю разработку сайта, улучшаю логику стилей и&nbsp;упрощаю синтаксис.</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>Figma/ Scetch/ Photoshop</h3>
+                        <p>Работаю с&nbsp;макетами в&nbsp;самых популярных программах (нарезка изображений, экспорт SVG, создание спрайтов).</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p>3</p>
-                    <p>Установите виниры на зубы, плотно придавливая руками</p>
-                </div>
+                <div class="col-sm">
+                    <div class="skills__item">
+                        <h3>Javascript</h3>
+                        <p>С помощью JS создаю динамические элементы: формы, меню, калькуляторы, всплывающие окна и т.п.</p>
+                    </div>
 
-                <div>
-                    <p>4</p>
-                    <p>Очищайте виниры 2 раза в день обычной зубной пастой</p>
+                    <div class="skills__item">
+                        <h3>Gulp</h3>
+                        <p>Использую для сборки ассетов, компиляции и минификации кода для того, чтобы работа над проектом была более простая и быстрая.</p>
+                    </div>
+
+                    <div class="skills__item">
+                        <h3>GIT</h3>
+                        <p>Система версий&nbsp;&mdash; полезный инструмент, всегда можно быстро откатить назад при необходимости, а&nbsp;при работе в&nbsp;команде вообще незаменим.</p>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="projects container-middle" data-from-anchor="projects">
+            <!-- <div class="projects__item">
+                <a href="#" target="_blank"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+
+                <div class="projects__item-text">
+                    <h2>сайт для детской библиотеки</h2>
+                    <p>адаптитвный сайт на&nbsp;флексах могостраничный с&nbsp;препроцессорами, сборщиком, слайдером и&nbsp;тд&nbsp;натянутый на&nbsp;вордпресс</p>
+                </div>
+            </div> -->
+
+            <div class="projects__item">
+                <a href="https://ksenksenni.github.io/foodie-html-practice/" target="_blank"><img src="img/project_food_add.JPG" alt="" class="projects__item-image"></a>
+
+                <div class="projects__item-text">
+                    <h2>Лендинг для food-приложения</h2>
+                    <p>Адаптивный лендинг на флексах с использованием препроцессора SCSS и сборщика Gulp с семантической разметкой и именованием классов по методологии BEM.</p>
+                </div>
+
+            </div>
+
+            <div class="projects__item">
+                <a href="https://ksenksenni.github.io/alef-development/" target="_blank"><img src="img/project-catshop.JPG" alt="" class="projects__item-image"></a>
+
+                <div class="projects__item-text">
+                    <h2>Страница для интернет-магазина</h2>
+                    <p>Адаптивная страница с карточками товаров, с настроенной на JS сортировкой их по различным параметрам, блокировкой формы при вводе некорректного email, кнопкой плавной прокрутки наверх и всплывающими окнами информации. Реализация бургер-меню
+                        на чистом CSS.</p>
+                </div>
+            </div>
+
+            <div class="projects__item">
+                <a href="https://ksenksenni.github.io/dataduck-form-script/" target="_blank"><img src="img/project-form.JPG" alt="" class="projects__item-image"></a>
+
+                <div class="projects__item-text">
+                    <h2>Форма с проверкой длины пароля</h2>
+                    <p>Адаптивный блок с формой: отправка данных на сервер, всплывающие окна и блокировка отправки формы при введении пароля короче 4 символовы.</p>
+                </div>
+            </div>
+
+            <!-- <div class="projects__item">
+                <a href="#" target="_blank"><img src="img/avatar.jpg" alt="" class="projects__item-image"></a>
+
+                <div class="projects__item-text">
+                    <h2>сайт на&nbsp;флексах/гридах/ с&nbsp;использованием сетки бутстпрапа</h2>
+                    <p>адаптитвный сайт на&nbsp;флексах могостраничный с&nbsp;препроцессорами, сборщиком, слайдером и&nbsp;тд</p>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="contacts" data-from-anchor="contacts">
+            <div class="container-small">
+                <h2 class="contacts__title">Как со&nbsp;мной связаться:</h2>
+
+                <div class="contacts__link contacts__link-email">
+                    <a href="mailto:nikolaevaksa@gmail.com" class="contacts__link-description">nikolaevaksa@gmail.com</a>
+                </div>
+
+                <div class="contacts__link-social">
+                    <a href="https://tlgg.ru/ksenksenni" target="_blank" class="contacts__link-social-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="40" height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 50 50" xml:space="preserve">
+                            <g>
+                                <circle xmlns="http://www.w3.org/2000/svg" cx="12" cy="12" fill="#8a8a8a" r="12" data-original="#039be5" class="svg-btn"/>
+                                <path xmlns="http://www.w3.org/2000/svg" d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#c7f6fc" data-original="#ffffff"/>
+                            </g>
+                         </svg>
+                    </a>
+
+                    <a href="https://wa.me/79046134465" target="_blank" class="contacts__link-social-svg contacts__link-social-wp">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="40" height="40" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 50 50" xml:space="preserve"
+                            class="">
+                            <g>
+                                <path xmlns="http://www.w3.org/2000/svg" d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#8a8a8a" data-original="#4caf50"  class="svg-btn"/>
+                                <path xmlns="http://www.w3.org/2000/svg" d="M405.024,361.504c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264  C189.888,347.2,141.44,270.752,137.664,265.792c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304 c6.176-6.304,16.384-9.184,26.176-9.184c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64  c6.176,14.88,21.216,51.616,23.008,55.392c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744  c-3.776,4.352-7.36,7.68-11.136,12.352c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616  c28.576,25.44,51.744,33.568,60.032,37.024c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496  c5.12-7.232,11.584-8.128,18.368-5.568c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736  C411.2,329.152,411.2,344.032,405.024,361.504z" fill="#c7f6fc" data-original="#fafafa"/>
+                            </g>
+                            </svg>
+                    </a>
+
+                    <a href="https://github.com/ksenksenni" target="_blank" class="contacts__link-social-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="40" height="40" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                            class="">
+                            <g>
+                                <g xmlns="http://www.w3.org/2000/svg"><g>
+                                <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872 c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464 c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496 c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368 c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68 c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672 c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992 c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496 c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z" fill="#8a8a8a"  data-original="#000000" class="svg-btn"/>
+                            </g>
+                            </svg>
+                    </a>
+                </div>
+                <div class="contacts__link-resume">
+                    <a href="https://spb.hh.ru/resume/a5ca3ec3ff090e57300039ed1f775a71574863" target="_blank" class="contacts__link-resume-btn button">Перейти к&nbsp;резюме</a>
+                </div>
+
+                <div class="contacts__copyright">
+                    <p>&copy;&nbsp;Ксения Николаева</p>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
+    <script src="mobilemenu.js"></script>
+    <script src="scroll.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
