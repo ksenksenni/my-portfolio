@@ -265,6 +265,14 @@
         max-width: 300px;
     }
     
+    .projects__item-image:hover {
+        transform: scale(1.05);
+    }
+    
+    .projects__item-image:active {
+        filter: brightness(40%);
+    }
+    
     .projects__item-text {
         max-width: 600px;
     }
@@ -361,4 +369,8 @@
     .contacts__copyright {
         font-size: 12px;
         margin-top: 40px;
+    }
+    
+    .contacts__copyright-text {
+        margin-bottom: 0;
     }
